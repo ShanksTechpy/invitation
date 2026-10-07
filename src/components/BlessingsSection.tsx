@@ -53,9 +53,6 @@ export const BlessingsSection: React.FC = () => {
     <section id="blessings" className="py-24 px-6 bg-[#1F0408] relative overflow-hidden">
       <div className="max-w-6xl mx-auto space-y-16 relative z-10">
         <div className="text-center space-y-3">
-          <p className="font-serif-cormorant text-sm uppercase tracking-[0.3em] text-[#D4AF37]">
-            Wishes & Prayers
-          </p>
           <h2 className="font-wedding text-5xl sm:text-6xl md:text-7xl font-normal gold-text-gradient py-1">
             Send Your Blessings
           </h2>

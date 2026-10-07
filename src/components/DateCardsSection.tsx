@@ -28,10 +28,7 @@ export const DateCardsSection: React.FC = () => {
             className="p-8 sm:p-10 rounded-3xl palace-card border border-[#D4AF37]/40 relative overflow-hidden flex flex-col justify-between space-y-8 group hover:border-[#D4AF37] transition-all duration-500 shadow-[0_20px_45px_rgba(0,0,0,0.7)] preserve-3d cursor-pointer"
           >
             <div className="space-y-6 translate-z-20">
-              <div className="flex items-center justify-between border-b border-[#D4AF37]/20 pb-4">
-                <span className="font-sans-inter text-xs uppercase tracking-[0.25em] text-[#D4AF37] font-semibold">
-                  Main Event
-                </span>
+              <div className="flex items-center justify-end border-b border-[#D4AF37]/20 pb-4">
                 <Heart className="w-5 h-5 text-[#E6C657] fill-[#D4AF37] animate-pulse drop-shadow-[0_0_12px_rgba(212,175,55,0.8)] group-hover:scale-125 transition-transform duration-300" />
               </div>
 
@@ -77,10 +74,7 @@ export const DateCardsSection: React.FC = () => {
             className="p-8 sm:p-10 rounded-3xl palace-card border border-[#D4AF37]/40 relative overflow-hidden flex flex-col justify-between space-y-8 group hover:border-[#D4AF37] transition-all duration-500 shadow-[0_20px_45px_rgba(0,0,0,0.7)] preserve-3d cursor-pointer"
           >
             <div className="space-y-6 translate-z-20">
-              <div className="flex items-center justify-between border-b border-[#D4AF37]/20 pb-4">
-                <span className="font-sans-inter text-xs uppercase tracking-[0.25em] text-[#D4AF37] font-semibold">
-                  Grand Celebration
-                </span>
+              <div className="flex items-center justify-end border-b border-[#D4AF37]/20 pb-4">
                 <span className="text-2xl group-hover:scale-125 transition-transform duration-300">✨</span>
               </div>
 
