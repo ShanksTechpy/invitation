@@ -25,20 +25,33 @@ export const PraharajWelcome: React.FC = () => {
           <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto" />
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 1.2, delay: 0.3, ease: 'easeOut' }}
-          className="font-serif-cormorant text-2xl sm:text-3xl md:text-4xl text-[#FDFBF7] font-light leading-relaxed max-w-4xl mx-auto italic flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1.5"
+          className="font-serif-cormorant text-xl sm:text-2xl md:text-3xl text-[#FDFBF7] font-light leading-relaxed max-w-3xl mx-auto space-y-4 text-center"
         >
-          <span>“With hearts filled with joy and blessings, the Praharaj Family warmly welcomes you to celebrate the wedding of</span>
-          <span className="font-medium text-[#FCEAA6] not-italic">Udit Narayan Praharaj</span>
-          <span className="inline-flex items-center mx-1">
-            <Heart className="w-6 h-6 sm:w-7 sm:h-7 text-[#FF3B5C] fill-[#FF3B5C] animate-pulse drop-shadow-[0_0_15px_rgba(255,59,92,0.9)]" />
-          </span>
-          <span className="font-medium text-[#FCEAA6] not-italic">Subhadarshini Panda.”</span>
-        </motion.p>
+          <p className="italic text-[#E8DFD1]/90">
+            With hearts filled with joy and blessings, the Praharaj Family warmly welcomes you to celebrate the wedding of
+          </p>
+
+          <div className="flex flex-col items-center justify-center gap-3 pt-3">
+            <span className="font-wedding text-3xl sm:text-5xl md:text-6xl text-[#FCEAA6] tracking-wide block font-normal">
+              Udit Narayan Praharaj
+            </span>
+
+            <div className="py-2 flex items-center justify-center">
+              <div className="relative p-2.5 rounded-full border border-[#D4AF37]/60 bg-gradient-to-b from-[#4A0E17] via-[#26070B] to-[#120205] shadow-[0_0_30px_rgba(212,175,55,0.6),0_0_20px_rgba(255,59,92,0.7)] preserve-3d hover:scale-110 transition-transform">
+                <Heart className="w-7 h-7 sm:w-9 sm:h-9 text-[#FF3B5C] fill-[#FF3B5C] animate-pulse filter drop-shadow-[0_0_15px_rgba(255,59,92,0.95)]" />
+              </div>
+            </div>
+
+            <span className="font-wedding text-3xl sm:text-5xl md:text-6xl text-[#FCEAA6] tracking-wide block font-normal">
+              Subhadarshini Panda.
+            </span>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
