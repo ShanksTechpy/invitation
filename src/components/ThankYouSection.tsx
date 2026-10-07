@@ -38,8 +38,8 @@ export const ThankYouSection: React.FC = () => {
             <p className="font-serif-cormorant text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
               With love & warm regards,
             </p>
-            <p className="font-wedding text-5xl sm:text-6xl gold-text-gradient font-normal">
-              Udit & Sima
+            <p className="font-wedding text-4xl sm:text-5xl md:text-6xl gold-text-gradient font-normal">
+              Udit & Subhadarshini
             </p>
           </div>
         </motion.div>

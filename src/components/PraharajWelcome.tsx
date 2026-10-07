@@ -36,7 +36,7 @@ export const PraharajWelcome: React.FC = () => {
           transition={{ duration: 1.2, delay: 0.3, ease: 'easeOut' }}
           className="font-serif-cormorant text-2xl sm:text-3xl md:text-4xl text-[#FDFBF7] font-light leading-relaxed max-w-3xl mx-auto italic"
         >
-          “Together with our family, we warmly welcome you to celebrate the sacred union and wedding of Udit & Sima.”
+          “Together with our family, we warmly welcome you to celebrate the sacred union and wedding of Udit Narayan Praharaj & Subhadarshini Panda.”
         </motion.p>
 
         <motion.div

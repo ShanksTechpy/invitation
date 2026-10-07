@@ -275,8 +275,8 @@ export const HeroOpening: React.FC<HeroOpeningProps> = ({
                   TOGETHER WITH THEIR FAMILIES
                 </p>
 
-                <h1 className="font-wedding text-[clamp(2.5rem,10vw,4.5rem)] font-normal leading-tight tracking-wide gold-text-gradient py-0.5">
-                  Udit & Sima
+                <h1 className="font-wedding text-[clamp(2.1rem,7.5vw,4.2rem)] font-normal leading-tight tracking-wide gold-text-gradient py-0.5">
+                  Udit & Subhadarshini
                 </h1>
 
                 <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto" />
@@ -324,7 +324,7 @@ export const HeroOpening: React.FC<HeroOpeningProps> = ({
           className="absolute bottom-[max(1.25rem,env(safe-area-inset-bottom))] inset-x-0 w-full flex flex-col items-center justify-center z-40 pointer-events-auto text-center"
         >
           <a
-            href="#welcome"
+            href="#shloka"
             className="inline-flex flex-col items-center gap-1 group cursor-pointer"
           >
             <span className="font-serif-cormorant text-xs tracking-[0.3em] uppercase font-semibold text-[#FCEAA6] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">

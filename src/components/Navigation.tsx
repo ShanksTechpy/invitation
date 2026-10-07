@@ -28,7 +28,7 @@ export const Navigation: React.FC<NavigationProps> = ({ isVisible }) => {
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
         <a href="#hero" className="flex items-center gap-2 group">
           <span className="font-wedding text-2xl md:text-3xl text-[#FCEAA6] group-hover:text-[#D4AF37] transition-colors">
-            Udit & Sima
+            Udit & Subhadarshini
           </span>
         </a>
 

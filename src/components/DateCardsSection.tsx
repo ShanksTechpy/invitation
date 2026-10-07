@@ -44,7 +44,7 @@ export const DateCardsSection: React.FC = () => {
                 <div className="flex items-start gap-4 p-3 rounded-xl badge-3d">
                   <Calendar className="w-5 h-5 text-[#D4AF37] shrink-0 mt-1" />
                   <div>
-                    <p className="font-medium text-xl text-[#FCEAA6]">Tuesday, 2nd February 2027</p>
+                    <p className="font-medium text-xl text-[#FCEAA6]">Wednesday, 10th February 2027</p>
                     <p className="text-sm text-[#E8DFD1]/70">Shubh Vivah Lagna</p>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export const DateCardsSection: React.FC = () => {
                 <div className="flex items-start gap-4 p-3 rounded-xl badge-3d">
                   <Calendar className="w-5 h-5 text-[#D4AF37] shrink-0 mt-1" />
                   <div>
-                    <p className="font-medium text-xl text-[#FCEAA6]">Thursday, 4th February 2027</p>
+                    <p className="font-medium text-xl text-[#FCEAA6]">Sunday, 14th February 2027</p>
                     <p className="text-sm text-[#E8DFD1]/70">Priti Bhoj & Blessings</p>
                   </div>
                 </div>

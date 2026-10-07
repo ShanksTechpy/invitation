@@ -33,27 +33,27 @@ export const CoupleReveal: React.FC = () => {
               <div className="w-full h-full rounded-t-full overflow-hidden relative border-2 border-[#D4AF37]/50 bg-[#1F0408] translate-z-10">
                 <img
                   src="/images/udit.jpg"
-                  alt="Udit - Groom"
+                  alt="Udit Narayan Praharaj - Groom"
                   className="w-full h-full object-cover object-top filter contrast-105 group-hover:scale-108 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1F0408]/80 via-transparent to-transparent opacity-40" />
               </div>
             </div>
 
-            <div className="space-y-2 translate-z-20">
+            <div className="space-y-2 translate-z-20 max-w-sm">
               <span className="font-sans-inter text-xs uppercase tracking-[0.25em] text-[#D4AF37] px-4 py-1.5 rounded-full badge-3d inline-block font-semibold">
                 Groom
               </span>
-              <h3 className="font-wedding text-4xl sm:text-5xl text-[#FCEAA6]">
-                Udit
+              <h3 className="font-wedding text-3xl sm:text-4xl md:text-5xl text-[#FCEAA6] leading-tight">
+                Udit Narayan Praharaj
               </h3>
-              <p className="font-serif-cormorant text-lg text-[#E8DFD1]/80 italic">
-                Son of Praharaj Family
+              <p className="font-serif-cormorant text-base sm:text-lg text-[#E8DFD1]/90 italic leading-relaxed">
+                Son of Prabin Ketan Praharaj<br />& Sashmita Praharaj
               </p>
             </div>
           </motion.div>
 
-          {/* Sima - Bride */}
+          {/* Subhadarshini - Bride */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -65,23 +65,23 @@ export const CoupleReveal: React.FC = () => {
             <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-t-full p-2.5 bg-gradient-to-b from-[#D4AF37] via-[#4A0E17] to-[#D4AF37]/50 shadow-[0_20px_45px_rgba(0,0,0,0.85),0_0_30px_rgba(212,175,55,0.2)] group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.95),0_0_45px_rgba(212,175,55,0.4)] transition-all duration-700 preserve-3d">
               <div className="w-full h-full rounded-t-full overflow-hidden relative border-2 border-[#D4AF37]/50 bg-[#1F0408] translate-z-10">
                 <img
-                  src="/images/sima.jpg"
-                  alt="Sima - Bride"
-                  className="w-full h-full object-cover object-center filter contrast-105 group-hover:scale-108 transition-transform duration-700"
+                  src="/images/subhadarshini.jpg"
+                  alt="Subhadarshini Panda - Bride"
+                  className="w-full h-full object-cover object-top filter contrast-105 group-hover:scale-108 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1F0408]/80 via-transparent to-transparent opacity-40" />
               </div>
             </div>
 
-            <div className="space-y-2 translate-z-20">
+            <div className="space-y-2 translate-z-20 max-w-sm">
               <span className="font-sans-inter text-xs uppercase tracking-[0.25em] text-[#D4AF37] px-4 py-1.5 rounded-full badge-3d inline-block font-semibold">
                 Bride
               </span>
-              <h3 className="font-wedding text-4xl sm:text-5xl text-[#FCEAA6]">
-                Sima
+              <h3 className="font-wedding text-3xl sm:text-4xl md:text-5xl text-[#FCEAA6] leading-tight">
+                Subhadarshini Panda
               </h3>
-              <p className="font-serif-cormorant text-lg text-[#E8DFD1]/80 italic">
-                Daughter of Royal Heritage
+              <p className="font-serif-cormorant text-base sm:text-lg text-[#E8DFD1]/90 italic leading-relaxed">
+                Daughter of Ajit Kumar Panda<br />& Bhanumati Panda
               </p>
             </div>
           </motion.div>

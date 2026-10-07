@@ -15,19 +15,13 @@ const initialBlessings: BlessingCard[] = [
     id: '1',
     name: 'Ankit',
     relation: "Groom's Brother",
-    message: 'May your journey together always be filled with endless love, happiness, laughter, and divine blessings. So thrilled to welcome Sima into our family!',
-  },
-  {
-    id: '2',
-    name: 'Raiguru Family',
-    relation: 'Family Blessings',
-    message: 'Wishing Udit and Sima a lifetime of eternal harmony, prosperity, good health, and abundant joy as you unite in holy matrimony.',
+    message: 'May your journey together always be filled with endless love, happiness, laughter, and divine blessings. So thrilled to welcome Subhadarshini into our family!',
   },
   {
     id: '3',
     name: 'Sashank',
     relation: 'Well Wisher',
-    message: 'Heartiest congratulations to Udit & Sima as you step into this sacred and beautiful new chapter of life together!',
+    message: 'Heartiest congratulations to Udit & Subhadarshini as you step into this sacred and beautiful new chapter of life together!',
   },
 ];
 
@@ -126,7 +120,7 @@ export const BlessingsSection: React.FC = () => {
         >
           <div className="text-center space-y-2 mb-8">
             <h3 className="font-serif-cormorant text-2xl sm:text-3xl font-medium text-[#FCEAA6]">
-              Shower Udit & Sima With Your Love
+              Shower Udit & Subhadarshini With Your Love
             </h3>
             <p className="font-serif-cormorant text-base text-[#E8DFD1]/80 italic">
               Leave your heartfelt wish for the bride & groom.
@@ -135,7 +129,7 @@ export const BlessingsSection: React.FC = () => {
 
           {submitted && (
             <div className="mb-6 p-4 rounded-xl bg-[#D4AF37]/20 border border-[#D4AF37] text-center text-[#FCEAA6] font-serif-cormorant text-lg">
-              ✨ Thank you! Your blessings have been sent to Udit & Sima.
+              ✨ Thank you! Your blessings have been sent to Udit & Subhadarshini.
             </div>
           )}
 

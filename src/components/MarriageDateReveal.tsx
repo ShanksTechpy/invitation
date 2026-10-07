@@ -301,11 +301,11 @@ export const MarriageDateReveal: React.FC = () => {
             {/* Main Ceremonial Date Display */}
             <div className="space-y-0 text-center z-10 my-auto">
               <p className="font-serif-cormorant text-base sm:text-lg font-semibold text-[#FCEAA6]">
-                Tuesday
+                Wednesday
               </p>
 
               <h3 className="font-wedding text-3xl sm:text-4xl gold-text-gradient font-normal leading-none py-1 drop-shadow-md">
-                2nd February
+                10th February
               </h3>
 
               <p className="font-wedding text-2xl sm:text-3xl text-[#E6C657] font-normal">

@@ -13,7 +13,7 @@ export const FooterSection: React.FC = () => {
         </div>
 
         <h3 className="font-wedding text-4xl sm:text-5xl text-[#FCEAA6]">
-          Udit & Sima
+          Udit & Subhadarshini
         </h3>
 
         <p className="font-serif-cormorant text-lg text-[#E8DFD1]/70 italic tracking-widest font-light">

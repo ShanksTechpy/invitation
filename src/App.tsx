@@ -45,37 +45,39 @@ export const App: React.FC = () => {
 
       {/* 2. WEDDING INVITATION STORY CONTENT */}
       <main className="relative z-20">
-        {/* Step A: Praharaj Family Welcome */}
+        {/* 2nd Page: Sanskrit Shloka */}
+        <section id="shloka">
+          <SanskritShlokaOne />
+        </section>
+
+        {/* 3rd Page: Praharaj Family Welcome */}
         <PraharajWelcome />
 
-        {/* Step B: Dedicated Marriage Date Reveal Card */}
+        {/* 4th Page: Scratch Card (Marriage Date Reveal) */}
         <MarriageDateReveal />
 
-        {/* Step C: Groom Udit & Bride Sima Photos */}
+        {/* 5th Page: The Beloved Couple (Groom Udit Narayan Praharaj & Bride Subhadarshini Panda) */}
         <CoupleReveal />
 
-        {/* Step D: First Sanskrit Shloka */}
-        <SanskritShlokaOne />
-
-        {/* Step E: Live Countdown */}
+        {/* 6th Page: Live Countdown */}
         <CountdownSection />
 
-        {/* Step F: Marriage & Reception Event Date Tiles */}
+        {/* Step G: Marriage & Reception Event Date Tiles */}
         <DateCardsSection />
 
-        {/* Step G: Second Sanskrit Shloka */}
+        {/* Step H: Second Sanskrit Shloka */}
         <SanskritShlokaTwo />
 
-        {/* Step H: Send Your Blessings */}
+        {/* Step I: Send Your Blessings */}
         <BlessingsSection />
 
-        {/* Step I: Location & Map */}
+        {/* Step J: Location & Map */}
         <LocationSection />
 
-        {/* Step J: Thank You from Udit & Sima */}
+        {/* Step K: Thank You */}
         <ThankYouSection />
 
-        {/* Step K: Footer */}
+        {/* Footer */}
         <FooterSection />
       </main>
     </div>
