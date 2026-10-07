@@ -25,16 +25,6 @@ export const SanskritShlokaOne: React.FC = () => {
           ॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभः ।<br />
           निर्विघ्नं कुरु मे देव शुभकार्येषु सर्वदा ॥
         </motion.h3>
-
-        <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          className="font-serif-cormorant italic text-base sm:text-lg text-[#E8DFD1]/70 max-w-xl mx-auto font-light"
-        >
-          “O Lord Ganesha, of grand form and radiant like a million suns, remove all obstacles and bless our auspicious occasion always.”
-        </motion.p>
       </div>
     </section>
   );
