@@ -266,38 +266,42 @@ export const MarriageDateReveal: React.FC = () => {
           </h2>
         </motion.div>
 
-        {/* ELEGANT COMPACT INVITATION CARD CONTAINER */}
+        {/* ELEGANT COMPACT INVITATION CARD CONTAINER (ROYAL 3D LOOK) */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.96, y: 15 }}
+          initial={{ opacity: 0, scale: 0.94, y: 20 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          whileHover={{ y: -6, rotateX: -3, rotateY: 3, scale: 1.02 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="relative mx-auto w-[90vw] max-w-[360px] sm:max-w-[400px] h-[250px] sm:h-[260px]"
+          transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
+          className="relative mx-auto w-[90vw] max-w-[360px] sm:max-w-[400px] h-[250px] sm:h-[260px] preserve-3d [perspective:1200px] cursor-pointer group"
         >
+          {/* Subtle Ambient Radial Gold Aura Behind Card */}
+          <div className="absolute inset-0 -m-3 rounded-3xl bg-gradient-to-r from-[#D4AF37]/30 via-[#AA8822]/20 to-[#D4AF37]/30 blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
           {/* REVEALED CARD CONTENT (MATCHES PAGE THEME COLOR: DEEP PALACE MAROON/DARK RED) */}
           <div
             ref={cardRef}
-            className="w-full h-full p-4 sm:p-5 rounded-2xl bg-gradient-to-b from-[#34080E] via-[#230408] to-[#120205] border-2 border-[#D4AF37]/70 shadow-[0_20px_50px_rgba(0,0,0,0.85),_0_0_20px_rgba(212,175,55,0.25)] flex flex-col items-center justify-between relative overflow-hidden text-[#FCEAA6] select-none"
+            className="w-full h-full p-4 sm:p-5 rounded-2xl bg-gradient-to-b from-[#34080E] via-[#230408] to-[#120205] border-2 border-[#D4AF37]/80 shadow-[0_25px_60px_rgba(0,0,0,0.9),0_0_30px_rgba(212,175,55,0.3)] flex flex-col items-center justify-between relative overflow-hidden text-[#FCEAA6] select-none preserve-3d"
           >
             {/* Corner Decorative Filigree */}
-            <div className="absolute top-2 left-2 text-[#D4AF37]/70 text-xs font-serif z-10 pointer-events-none">❖</div>
-            <div className="absolute top-2 right-2 text-[#D4AF37]/70 text-xs font-serif z-10 pointer-events-none">❖</div>
-            <div className="absolute bottom-2 left-2 text-[#D4AF37]/70 text-xs font-serif z-10 pointer-events-none">❖</div>
-            <div className="absolute bottom-2 right-2 text-[#D4AF37]/70 text-xs font-serif z-10 pointer-events-none">❖</div>
+            <div className="absolute top-2 left-2 text-[#D4AF37]/70 text-xs font-serif z-10 pointer-events-none translate-z-10">❖</div>
+            <div className="absolute top-2 right-2 text-[#D4AF37]/70 text-xs font-serif z-10 pointer-events-none translate-z-10">❖</div>
+            <div className="absolute bottom-2 left-2 text-[#D4AF37]/70 text-xs font-serif z-10 pointer-events-none translate-z-10">❖</div>
+            <div className="absolute bottom-2 right-2 text-[#D4AF37]/70 text-xs font-serif z-10 pointer-events-none translate-z-10">❖</div>
 
             {/* Gold Filigree Inner Line */}
-            <div className="absolute inset-2 border border-[#D4AF37]/40 rounded-xl pointer-events-none z-10" />
+            <div className="absolute inset-2 border border-[#D4AF37]/40 rounded-xl pointer-events-none z-10 translate-z-10" />
 
             {/* REVEALED CARD CONTENT */}
             {/* Top Subtitle Header */}
-            <div className="space-y-0.5 text-center z-10 pt-1">
+            <div className="space-y-0.5 text-center z-10 pt-1 translate-z-20">
               <p className="font-serif-cormorant text-[11px] sm:text-xs font-bold tracking-[0.25em] text-[#D4AF37] uppercase">
                 THE WEDDING
               </p>
             </div>
 
             {/* Main Ceremonial Date Display */}
-            <div className="space-y-0 text-center z-10 my-auto">
+            <div className="space-y-0 text-center z-10 my-auto translate-z-30">
               <p className="font-serif-cormorant text-base sm:text-lg font-semibold text-[#FCEAA6]">
                 Wednesday
               </p>
@@ -312,7 +316,7 @@ export const MarriageDateReveal: React.FC = () => {
             </div>
 
             {/* Bottom Ceremony Footer */}
-            <div className="space-y-0.5 text-center z-10 pb-1 w-full border-t border-[#D4AF37]/40 pt-1.5">
+            <div className="space-y-0.5 text-center z-10 pb-1 w-full border-t border-[#D4AF37]/40 pt-1.5 translate-z-20">
               <p className="font-serif-cormorant text-[10px] sm:text-[11px] font-bold tracking-[0.2em] text-[#D4AF37] uppercase">
                 MARRIAGE CEREMONY
               </p>
@@ -326,9 +330,9 @@ export const MarriageDateReveal: React.FC = () => {
               {!isRevealed && (
                 <motion.div
                   initial={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
+                  exit={{ opacity: 0, scale: 1.05 }}
                   transition={{ duration: 0.6 }}
-                  className="absolute inset-0 z-30 cursor-pointer select-none touch-none rounded-2xl overflow-hidden shadow-lg"
+                  className="absolute inset-0 z-30 cursor-pointer select-none touch-none rounded-2xl overflow-hidden shadow-lg translate-z-10"
                 >
                   <canvas
                     ref={canvasRef}
