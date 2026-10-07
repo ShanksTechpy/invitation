@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Heart } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 export const CoupleReveal: React.FC = () => {
   const [groomHovered, setGroomHovered] = useState(false);
@@ -20,9 +20,6 @@ export const CoupleReveal: React.FC = () => {
             The Beloved Couple
           </h2>
           <div className="w-28 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto" />
-          <p className="font-serif-cormorant text-xs sm:text-sm text-[#E8DFD1]/60 italic">
-            (Tap or hover on photos to reveal parents' names)
-          </p>
         </div>
 
         {/* Groom & Bride Grid */}
@@ -47,12 +44,7 @@ export const CoupleReveal: React.FC = () => {
                   alt="Udit Narayan Praharaj - Groom"
                   className="w-full h-full object-cover object-top filter contrast-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1F0408]/90 via-transparent to-transparent opacity-60" />
-                <div className="absolute bottom-3 left-0 right-0 text-center px-2">
-                  <span className="font-sans-inter text-[10px] uppercase tracking-[0.2em] text-[#FCEAA6] bg-[#120205]/80 px-3 py-1 rounded-full border border-[#D4AF37]/40 shadow-md inline-flex items-center gap-1">
-                    <Sparkles className="w-3 h-3 text-[#D4AF37]" /> Tap to Reveal Parents
-                  </span>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1F0408]/40 via-transparent to-transparent opacity-40" />
               </div>
 
               {/* Back Side - Parents Name Reveal */}
@@ -83,13 +75,7 @@ export const CoupleReveal: React.FC = () => {
                 Udit Narayan Praharaj
               </h3>
               <p className="font-serif-cormorant text-base sm:text-lg text-[#E8DFD1]/90 italic leading-relaxed">
-                {groomHovered ? (
-                  <span className="text-[#FCEAA6] font-medium animate-fade-in">
-                    Son of Mr. Prabin Ketan Praharaj & Mrs. Sashmita Praharaj
-                  </span>
-                ) : (
-                  <span>Son of Mr. Prabin Ketan Praharaj & Mrs. Sashmita Praharaj</span>
-                )}
+                Son of Mr. Prabin Ketan Praharaj<br />& Mrs. Sashmita Praharaj
               </p>
             </div>
           </div>
@@ -114,12 +100,7 @@ export const CoupleReveal: React.FC = () => {
                   alt="Subhadarshini Panda - Bride"
                   className="w-full h-full object-cover object-top filter contrast-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1F0408]/90 via-transparent to-transparent opacity-60" />
-                <div className="absolute bottom-3 left-0 right-0 text-center px-2">
-                  <span className="font-sans-inter text-[10px] uppercase tracking-[0.2em] text-[#FCEAA6] bg-[#120205]/80 px-3 py-1 rounded-full border border-[#D4AF37]/40 shadow-md inline-flex items-center gap-1">
-                    <Sparkles className="w-3 h-3 text-[#D4AF37]" /> Tap to Reveal Parents
-                  </span>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1F0408]/40 via-transparent to-transparent opacity-40" />
               </div>
 
               {/* Back Side - Parents Name Reveal */}
@@ -150,13 +131,7 @@ export const CoupleReveal: React.FC = () => {
                 Subhadarshini Panda
               </h3>
               <p className="font-serif-cormorant text-base sm:text-lg text-[#E8DFD1]/90 italic leading-relaxed">
-                {brideHovered ? (
-                  <span className="text-[#FCEAA6] font-medium animate-fade-in">
-                    Daughter of Mr. Ajit Kumar Panda & Mrs. Bhanumati Panda
-                  </span>
-                ) : (
-                  <span>Daughter of Mr. Ajit Kumar Panda & Mrs. Bhanumati Panda</span>
-                )}
+                Daughter of Mr. Ajit Kumar Panda<br />& Mrs. Bhanumati Panda
               </p>
             </div>
           </div>
