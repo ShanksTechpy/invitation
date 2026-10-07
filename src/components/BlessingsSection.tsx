@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { Send, Sparkles } from 'lucide-react';
 
 export const BlessingsSection: React.FC = () => {
   const [name, setName] = useState('');
@@ -98,9 +97,9 @@ export const BlessingsSection: React.FC = () => {
 
             <button
               type="submit"
-              className="w-full py-4 px-8 rounded-full bg-gradient-to-r from-[#F3DB83] via-[#D4AF37] to-[#AA8822] text-[#1F0408] font-sans-inter text-xs uppercase tracking-[0.25em] font-bold shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_35px_rgba(212,175,55,0.6)] hover:scale-[1.01] transition-all flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full py-4 px-8 rounded-full bg-gradient-to-r from-[#F3DB83] via-[#D4AF37] to-[#AA8822] text-[#1F0408] font-sans-inter text-xs uppercase tracking-[0.25em] font-bold shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_35px_rgba(212,175,55,0.6)] hover:scale-[1.01] transition-all flex items-center justify-center cursor-pointer"
             >
-              <Sparkles className="w-4 h-4" /> Send Blessing via WhatsApp <Send className="w-4 h-4" />
+              SEND BLESSINGS
             </button>
           </form>
         </motion.div>
