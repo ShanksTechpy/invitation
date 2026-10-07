@@ -62,7 +62,7 @@ export const PraharajWelcome: React.FC = () => {
         >
           <div className="flex items-center justify-center gap-3 text-[#D4AF37]/80">
             <span className="h-[1px] w-16 bg-[#D4AF37]/40" />
-            <Heart className="w-5 h-5 text-[#E6C657] fill-[#D4AF37] animate-pulse drop-shadow-[0_0_12px_rgba(212,175,55,0.8)]" />
+            <span className="text-[#E6C657] font-bold text-lg leading-none drop-shadow-[0_0_12px_rgba(212,175,55,0.8)] select-none">ॐ</span>
             <span className="h-[1px] w-16 bg-[#D4AF37]/40" />
           </div>
         </motion.div>
