@@ -60,40 +60,45 @@ export const MarriageDateReveal: React.FC = () => {
     ctx.lineWidth = 1;
     ctx.strokeRect(12, 12, width - 24, height - 24);
 
-    // Corner Filigree Motifs
-    ctx.fillStyle = '#1F0408';
-    ctx.font = '12px serif';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
+    // Sacred Ceremonial Bind Thread (Kalava / Red & Gold Thread)
+    const centerY = height / 2;
 
-    ctx.fillText('❖', 20, 20);
-    ctx.fillText('❖', width - 20, 20);
-    ctx.fillText('❖', 20, height - 20);
-    ctx.fillText('❖', width - 20, height - 20);
-
-    // Center Gold Emblem
-    ctx.fillStyle = '#C41E3A';
-    ctx.font = '18px serif';
-    ctx.fillText('❤', width / 2, height / 2 - 36);
-
-    // Ceremonial Heading: SCRATCH TO REVEAL OUR SPECIAL DATE (Dark Royal Maroon on Gold Foil)
-    ctx.font = '24px "Classic Wedding Demo", "Great Vibes", serif';
-    ctx.fillStyle = '#1F0408';
-    ctx.fillText('Scratch to Reveal', width / 2, height / 2 - 10);
-    ctx.fillText('Our Special Date', width / 2, height / 2 + 16);
-
-    // Subtitle: Scratch 3 times to reveal
-    ctx.font = '600 12px "Cormorant Garamond", Georgia, serif';
-    ctx.fillStyle = '#3A1204';
-    ctx.fillText('Scratch 3 times to reveal', width / 2, height / 2 + 40);
-
-    // Decorative Line Accent
-    ctx.strokeStyle = '#1F0408';
-    ctx.lineWidth = 1;
+    // Red Base Thread Line
+    ctx.strokeStyle = '#B31B1B';
+    ctx.lineWidth = 8;
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.4)';
+    ctx.shadowBlur = 6;
     ctx.beginPath();
-    ctx.moveTo(width / 2 - 35, height / 2 + 50);
-    ctx.lineTo(width / 2 + 35, height / 2 + 50);
+    ctx.moveTo(16, centerY);
+    ctx.lineTo(width - 16, centerY);
     ctx.stroke();
+
+    // Reset Shadow
+    ctx.shadowBlur = 0;
+
+    // Golden Intertwined Strand
+    ctx.strokeStyle = '#FCEAA6';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    for (let x = 16; x <= width - 16; x += 12) {
+      ctx.arc(x, centerY, 3, 0, Math.PI);
+    }
+    ctx.stroke();
+
+    // Central Sacred Knot Medallion
+    ctx.fillStyle = '#8B0000';
+    ctx.strokeStyle = '#D4AF37';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(width / 2, centerY, 14, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+
+    // Center Gold Core Ring
+    ctx.fillStyle = '#D4AF37';
+    ctx.beginPath();
+    ctx.arc(width / 2, centerY, 5, 0, Math.PI * 2);
+    ctx.fill();
   }, []);
 
   useEffect(() => {
