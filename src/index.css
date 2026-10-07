@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Classic Wedding Demo";
+  src: local("Classic Wedding Demo"), 
+       local("ClassicWeddingDemo"),
+       url("https://fonts.cdnfonts.com/s/93125/ClassicWeddingDemo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background-color: #1F0408;
+    color: #FAF5EC;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+}
+
+.font-wedding {
+  font-family: "Classic Wedding Demo", "Great Vibes", 'Cinzel', serif;
+}
+
+.font-serif-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom Gold Gradient Text */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFF5D0 0%, #E6C657 50%, #B88B2A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Enhanced Cinematic Video Quality Styles */
+.enhanced-cinematic-video {
+  filter: contrast(1.12) saturate(1.18) brightness(1.04);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform, filter;
+}
+
+/* Hardware Accelerated GPU Layer */
+.gpu-layer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+/* Gold Border Shimmer */
+.gold-border-glow {
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15), inset 0 0 15px rgba(212, 175, 55, 0.08);
+}
+
+/* Glass & 3D Palace Card Styling */
+.palace-card {
+  background: linear-gradient(145deg, rgba(52, 8, 14, 0.92) 0%, rgba(26, 3, 7, 0.95) 100%);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.75), 
+    0 0 25px rgba(212, 175, 55, 0.12),
+    inset 0 1px 1px rgba(255, 240, 180, 0.3);
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.5s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .palace-card:hover {
+    transform: translateY(-8px) rotateX(3deg) scale(1.015);
+    border-color: rgba(212, 175, 55, 0.75);
+    box-shadow: 
+      0 25px 55px rgba(0, 0, 0, 0.9), 
+      0 0 40px rgba(212, 175, 55, 0.35),
+      inset 0 1px 2px rgba(255, 245, 200, 0.5);
+  }
+}
+
+/* 3D Depth Layer utilities */
+.preserve-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.translate-z-10 {
+  transform: translateZ(10px);
+}
+
+.translate-z-20 {
+  transform: translateZ(20px);
+}
+
+.translate-z-30 {
+  transform: translateZ(30px);
+}
+
+/* 3D Embossed Golden Badges */
+.badge-3d {
+  background: linear-gradient(145deg, rgba(42, 8, 14, 0.9), rgba(18, 2, 5, 0.95));
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 
+    0 6px 15px rgba(0, 0, 0, 0.6),
+    inset 0 1px 1px rgba(255, 235, 170, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hide scrollbars globally across all browsers while preserving smooth scroll */
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+
+html, body {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+  -webkit-overflow-scrolling: touch;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+/* Hide scrollbars during video intro */
+body.scroll-locked {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+body:not(.scroll-locked) {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  touch-action: pan-y !important;
+}
+
+
