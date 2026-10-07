@@ -16,7 +16,7 @@ export const ThankYouSection: React.FC = () => {
             Heartfelt Gratitude
           </span>
 
-          <h2 className="font-serif-cormorant text-4xl sm:text-5xl md:text-6xl text-[#FDFBF7] font-medium tracking-wide">
+          <h2 className="font-wedding text-5xl sm:text-6xl md:text-7xl font-normal gold-text-gradient py-2">
             With Love & Gratitude
           </h2>
 
