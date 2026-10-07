@@ -248,7 +248,7 @@ export const MarriageDateReveal: React.FC = () => {
       </div>
 
       <div className="max-w-md mx-auto space-y-6 relative z-10">
-        {/* Section Header with Glowing 3D Heart */}
+        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -256,10 +256,6 @@ export const MarriageDateReveal: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="space-y-3 flex flex-col items-center"
         >
-          <div className="relative p-2.5 rounded-full border border-[#D4AF37]/60 bg-[#34080E]/90 shadow-[0_0_30px_rgba(255,59,92,0.6)]">
-            <Heart className="w-7 h-7 text-[#FF3B5C] fill-[#FF3B5C] animate-pulse drop-shadow-[0_0_15px_rgba(255,59,92,0.9)]" />
-          </div>
-
           <h2 className="font-wedding text-3xl sm:text-4xl md:text-5xl gold-text-gradient font-normal pt-1">
             Scratch to Reveal Our Special Date
           </h2>
