@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Heart } from 'lucide-react';
 
 export const SanskritShlokaOne: React.FC = () => {
   return (
@@ -10,9 +11,9 @@ export const SanskritShlokaOne: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="text-2xl text-[#D4AF37]"
+          className="flex justify-center"
         >
-          ☸
+          <Heart className="w-6 h-6 text-[#E6C657] fill-[#D4AF37] animate-pulse drop-shadow-[0_0_12px_rgba(212,175,55,0.8)]" />
         </motion.div>
 
         <motion.h3
