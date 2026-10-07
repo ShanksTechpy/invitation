@@ -315,7 +315,7 @@ export const HeroOpening: React.FC<HeroOpeningProps> = ({
         )}
       </AnimatePresence>
 
-      {/* 5. ROYAL GOLDEN SCROLL INDICATOR (Renders strictly AFTER opening invitation) */}
+      {/* 5. ROYAL SCROLL INDICATOR (Renders strictly AFTER opening invitation) */}
       {isVideoVisible && (
         <motion.div
           initial={{ opacity: 0, y: 15 }}
@@ -325,12 +325,12 @@ export const HeroOpening: React.FC<HeroOpeningProps> = ({
         >
           <a
             href="#shloka"
-            className="inline-flex flex-col items-center gap-1.5 px-5 py-2 rounded-full border border-[#D4AF37]/60 bg-[#120205]/85 backdrop-blur-md shadow-[0_0_25px_rgba(212,175,55,0.4)] group hover:scale-105 active:scale-95 transition-all cursor-pointer"
+            className="inline-flex flex-col items-center gap-1 cursor-pointer group"
           >
-            <span className="font-serif-cormorant text-xs tracking-[0.25em] uppercase font-bold text-[#FCEAA6] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
-              Scroll Down to Explore
+            <span className="font-serif-cormorant text-xs tracking-[0.3em] uppercase font-semibold text-[#FCEAA6] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">
+              SCROLL DOWN
             </span>
-            <ArrowDown className="w-4 h-4 text-[#D4AF37] drop-shadow-[0_0_10px_rgba(212,175,55,0.9)] animate-bounce" />
+            <ArrowDown className="w-5 h-5 text-[#FCEAA6] drop-shadow-[0_0_15px_rgba(212,175,55,0.95)] animate-bounce mt-0.5" />
           </a>
         </motion.div>
       )}
