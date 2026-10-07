@@ -118,6 +118,7 @@ export const DateCardsSection: React.FC = () => {
                   <div>
                     <p className="font-medium text-lg text-[#FCEAA6]">Contact Information</p>
                     <p className="text-sm text-[#E8DFD1]/90 font-sans-inter">Ankit: +91 79 7866 3088</p>
+                    <p className="text-sm text-[#E8DFD1]/90 font-sans-inter">Udit: +91 79 7852 0715</p>
                   </div>
                 </div>
               </div>
