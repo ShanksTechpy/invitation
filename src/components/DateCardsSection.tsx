@@ -95,17 +95,14 @@ export const DateCardsSection: React.FC = () => {
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("C3VC+C4J, Tarito, Odisha 754131")}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-3.5 rounded-xl badge-3d border border-[#D4AF37]/30 hover:border-[#D4AF37] hover:bg-[#34080E]/80 transition-all cursor-pointer group/map"
+                  className="flex items-start gap-4 p-3 rounded-xl badge-3d hover:border-[#D4AF37] hover:bg-[#34080E]/80 transition-all cursor-pointer group/map"
                 >
                   <MapPin className="w-5 h-5 text-[#D4AF37] shrink-0 mt-1 group-hover/map:scale-125 transition-transform" />
                   <div>
-                    <p className="font-medium text-lg text-[#FCEAA6] group-hover/map:underline flex items-center gap-1.5">
+                    <p className="font-medium text-lg text-[#FCEAA6] group-hover/map:underline">
                       Praharaj Grand Venue
-                      <span className="text-[10px] uppercase font-sans-inter tracking-wider text-[#D4AF37] bg-[#120205] px-2 py-0.5 rounded-full border border-[#D4AF37]/40 font-semibold">
-                        Map ↗
-                      </span>
                     </p>
-                    <p className="text-sm text-[#E8DFD1]/70">C3VC+C4J, Tarito, Odisha 754131</p>
+                    <p className="text-sm text-[#E8DFD1]/70">Tarito, Kishorenagar, Katak – 754131</p>
                   </div>
                 </a>
 
