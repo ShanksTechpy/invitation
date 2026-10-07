@@ -18,12 +18,8 @@ export const PraharajWelcome: React.FC = () => {
           transition={{ duration: 1.2, ease: 'easeOut' }}
           className="space-y-4"
         >
-          <div className="inline-block px-4 py-1 rounded-full border border-[#D4AF37]/30 bg-[#34080E]/60 text-[#FCEAA6] text-xs font-sans-inter uppercase tracking-[0.25em]">
-            Royal Welcoming
-          </div>
-
-          <h2 className="font-wedding text-5xl sm:text-6xl md:text-7xl font-normal gold-text-gradient py-2">
-            Praharaj Family
+          <h2 className="font-wedding text-4xl sm:text-6xl md:text-7xl font-normal gold-text-gradient py-2">
+            Praharaj Family Welcomes You
           </h2>
 
           <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto" />
