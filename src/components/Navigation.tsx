@@ -45,9 +45,6 @@ export const Navigation: React.FC<NavigationProps> = ({ isVisible }) => {
           <a href="#blessings" className="hover:text-[#D4AF37] transition-colors flex items-center gap-1.5">
             <Heart className="w-4 h-4 text-[#D4AF37]" /> Blessings
           </a>
-          <a href="#location" className="hover:text-[#D4AF37] transition-colors flex items-center gap-1.5">
-            <MapPin className="w-4 h-4 text-[#D4AF37]" /> Location
-          </a>
         </div>
 
         <a

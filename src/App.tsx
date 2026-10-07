@@ -7,7 +7,6 @@ import { SanskritShlokaOne } from './components/SanskritShlokaOne';
 import { CountdownSection } from './components/CountdownSection';
 import { DateCardsSection } from './components/DateCardsSection';
 import { BlessingsSection } from './components/BlessingsSection';
-import { LocationSection } from './components/LocationSection';
 import { ThankYouSection } from './components/ThankYouSection';
 import { FooterSection } from './components/FooterSection';
 
@@ -66,9 +65,6 @@ export const App: React.FC = () => {
 
         {/* Step H: Send Your Blessings */}
         <BlessingsSection />
-
-        {/* Step J: Location & Map */}
-        <LocationSection />
 
         {/* Step K: Thank You */}
         <ThankYouSection />

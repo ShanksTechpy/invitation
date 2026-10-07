@@ -76,22 +76,23 @@ export const MarriageDateReveal: React.FC = () => {
     ctx.font = '18px serif';
     ctx.fillText('❤', width / 2, height / 2 - 36);
 
-    // Ceremonial Heading: A SPECIAL DATE AWAITS (Dark Royal Maroon on Gold Foil)
-    ctx.font = '28px "Classic Wedding Demo", "Great Vibes", serif';
+    // Ceremonial Heading: SCRATCH TO REVEAL OUR SPECIAL DATE (Dark Royal Maroon on Gold Foil)
+    ctx.font = '24px "Classic Wedding Demo", "Great Vibes", serif';
     ctx.fillStyle = '#1F0408';
-    ctx.fillText('A Special Date Awaits', width / 2, height / 2 - 4);
+    ctx.fillText('Scratch to Reveal', width / 2, height / 2 - 10);
+    ctx.fillText('Our Special Date', width / 2, height / 2 + 16);
 
-    // Subtitle: Scratch gently to reveal
-    ctx.font = '600 13px "Cormorant Garamond", Georgia, serif';
+    // Subtitle: Scratch 3 times to reveal
+    ctx.font = '600 12px "Cormorant Garamond", Georgia, serif';
     ctx.fillStyle = '#3A1204';
-    ctx.fillText('Scratch 3 times to reveal', width / 2, height / 2 + 30);
+    ctx.fillText('Scratch 3 times to reveal', width / 2, height / 2 + 40);
 
     // Decorative Line Accent
     ctx.strokeStyle = '#1F0408';
     ctx.lineWidth = 1;
     ctx.beginPath();
-    ctx.moveTo(width / 2 - 35, height / 2 + 45);
-    ctx.lineTo(width / 2 + 35, height / 2 + 45);
+    ctx.moveTo(width / 2 - 35, height / 2 + 50);
+    ctx.lineTo(width / 2 + 35, height / 2 + 50);
     ctx.stroke();
   }, []);
 
@@ -246,25 +247,21 @@ export const MarriageDateReveal: React.FC = () => {
         <div className="w-[400px] h-[400px] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#D4AF37] via-[#5C0612]/30 to-transparent blur-3xl animate-subtle-pulse" />
       </div>
 
-      <div className="max-w-md mx-auto space-y-5 relative z-10">
-        {/* Section Header */}
+      <div className="max-w-md mx-auto space-y-6 relative z-10">
+        {/* Section Header with Glowing 3D Heart */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="space-y-1 flex flex-col items-center"
+          className="space-y-3 flex flex-col items-center"
         >
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-[#D4AF37]/40 bg-[#34080E]/70 shadow-sm text-[#FCEAA6]">
-            <Heart className="w-3 h-3 text-[#FF3B5C] fill-[#FF3B5C] animate-pulse" />
-            <span className="font-serif-cormorant text-xs uppercase tracking-[0.25em] font-semibold text-[#D4AF37]">
-              Shubh Vivah Lagna
-            </span>
-            <Heart className="w-3 h-3 text-[#FF3B5C] fill-[#FF3B5C] animate-pulse" />
+          <div className="relative p-2.5 rounded-full border border-[#D4AF37]/60 bg-[#34080E]/90 shadow-[0_0_30px_rgba(255,59,92,0.6)]">
+            <Heart className="w-7 h-7 text-[#FF3B5C] fill-[#FF3B5C] animate-pulse drop-shadow-[0_0_15px_rgba(255,59,92,0.9)]" />
           </div>
 
-          <h2 className="font-wedding text-3xl sm:text-4xl gold-text-gradient font-normal pt-1">
-            The Day We Begin Forever
+          <h2 className="font-wedding text-3xl sm:text-4xl md:text-5xl gold-text-gradient font-normal pt-1">
+            Scratch to Reveal Our Special Date
           </h2>
         </motion.div>
 
@@ -351,16 +348,13 @@ export const MarriageDateReveal: React.FC = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="flex flex-col items-center gap-1 pt-1"
+            className="flex flex-col items-center pt-2"
           >
-            <p className="font-serif-cormorant text-xs text-[#E6C657]/80 tracking-wider">
-              Scratch 3 times to reveal the date
-            </p>
             <button
               onClick={handleRevealDirectly}
-              className="font-sans-inter text-[11px] text-[#D4AF37]/90 hover:text-[#FFF5D0] underline underline-offset-4 tracking-wide transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#F3DB83] via-[#D4AF37] to-[#AA8822] text-[#1F0408] font-sans-inter text-xs uppercase tracking-[0.2em] font-bold shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_35px_rgba(212,175,55,0.7)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
             >
-              Reveal Wedding Date
+              Reveal Wedding Date ✨
             </button>
           </motion.div>
         ) : (

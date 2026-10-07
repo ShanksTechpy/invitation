@@ -69,10 +69,10 @@ export const DateCardsSection: React.FC = () => {
 
             <div className="pt-4 translate-z-30">
               <a
-                href="#location"
+                href="#blessings"
                 className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full border border-[#D4AF37]/60 bg-[#34080E]/80 text-[#FCEAA6] font-sans-inter text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#D4AF37] hover:text-[#1F0408] transition-all duration-300 shadow-[0_5px_15px_rgba(0,0,0,0.5)]"
               >
-                View Event Map
+                Send Your Blessings
               </a>
             </div>
           </motion.div>
@@ -127,10 +127,10 @@ export const DateCardsSection: React.FC = () => {
 
             <div className="pt-4 translate-z-30">
               <a
-                href="#location"
+                href="#blessings"
                 className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full border border-[#D4AF37]/60 bg-[#34080E]/80 text-[#FCEAA6] font-sans-inter text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#D4AF37] hover:text-[#1F0408] transition-all duration-300 shadow-[0_5px_15px_rgba(0,0,0,0.5)]"
               >
-                View Reception Venue
+                Send Your Blessings
               </a>
             </div>
           </motion.div>
