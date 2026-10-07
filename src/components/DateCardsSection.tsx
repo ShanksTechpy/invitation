@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, MapPin, Heart } from 'lucide-react';
+import { Calendar, Clock, MapPin, Heart, Phone } from 'lucide-react';
 
 export const DateCardsSection: React.FC = () => {
   return (
@@ -16,7 +16,6 @@ export const DateCardsSection: React.FC = () => {
           <div className="w-28 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto" />
         </div>
 
-        {/* Two Main Date Tiles */}
         {/* Two Main Date Tiles */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 preserve-3d">
           {/* Tile 1: Marriage Ceremony */}
@@ -66,15 +65,6 @@ export const DateCardsSection: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            <div className="pt-4 translate-z-30">
-              <a
-                href="#blessings"
-                className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full border border-[#D4AF37]/60 bg-[#34080E]/80 text-[#FCEAA6] font-sans-inter text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#D4AF37] hover:text-[#1F0408] transition-all duration-300 shadow-[0_5px_15px_rgba(0,0,0,0.5)]"
-              >
-                Send Your Blessings
-              </a>
-            </div>
           </motion.div>
 
           {/* Tile 2: Reception */}
@@ -122,16 +112,15 @@ export const DateCardsSection: React.FC = () => {
                     <p className="text-sm text-[#E8DFD1]/70">Tarito, Kishorenagar, Katak – 754131</p>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="pt-4 translate-z-30">
-              <a
-                href="#blessings"
-                className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full border border-[#D4AF37]/60 bg-[#34080E]/80 text-[#FCEAA6] font-sans-inter text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#D4AF37] hover:text-[#1F0408] transition-all duration-300 shadow-[0_5px_15px_rgba(0,0,0,0.5)]"
-              >
-                Send Your Blessings
-              </a>
+                <div className="flex items-start gap-4 p-3 rounded-xl badge-3d border border-[#D4AF37]/30 bg-[#34080E]/60">
+                  <Phone className="w-5 h-5 text-[#D4AF37] shrink-0 mt-1" />
+                  <div>
+                    <p className="font-medium text-lg text-[#FCEAA6]">Contact Information</p>
+                    <p className="text-sm text-[#E8DFD1]/90 font-sans-inter">Ankit: +91 79 7866 3088</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
