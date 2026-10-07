@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { HeroOpening, OpeningState } from './components/HeroOpening';
 import { PraharajWelcome } from './components/PraharajWelcome';
 import { MarriageDateReveal } from './components/MarriageDateReveal';
@@ -20,16 +20,19 @@ export const App: React.FC = () => {
     restDelta: 0.001,
   });
 
-  // Ensure scroll is enabled as soon as sequence completes or reaches welcome moment
+  // Ensure scroll is strictly locked on initial invitation card, and only unlocked after user opens invitation
   useEffect(() => {
     if (sequenceState === 'COMPLETED' || sequenceState === 'WELCOME_MOMENT') {
+      document.documentElement.classList.remove('scroll-locked');
       document.body.classList.remove('scroll-locked');
       document.body.style.overflowY = 'auto';
       document.body.style.touchAction = 'pan-y';
     } else {
+      document.documentElement.classList.add('scroll-locked');
       document.body.classList.add('scroll-locked');
       document.body.style.overflowY = 'hidden';
       document.body.style.touchAction = 'none';
+      window.scrollTo(0, 0);
     }
   }, [sequenceState]);
 
@@ -37,13 +40,17 @@ export const App: React.FC = () => {
     setSequenceState('COMPLETED');
   };
 
+  const isStoryUnlocked = sequenceState === 'WELCOME_MOMENT' || sequenceState === 'COMPLETED';
+
   return (
     <div className="min-h-screen bg-[#1F0408] text-[#FAF5EC] selection:bg-[#D4AF37]/30 selection:text-[#FFFDF9] relative">
       {/* Golden Scroll Progress Bar */}
-      <motion.div
-        style={{ scaleX }}
-        className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#F3DB83] via-[#D4AF37] to-[#AA8822] origin-left z-50 shadow-[0_0_15px_rgba(212,175,55,0.9)] pointer-events-none"
-      />
+      {isStoryUnlocked && (
+        <motion.div
+          style={{ scaleX }}
+          className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#F3DB83] via-[#D4AF37] to-[#AA8822] origin-left z-50 shadow-[0_0_15px_rgba(212,175,55,0.9)] pointer-events-none"
+        />
+      )}
 
       {/* 1. CONTINUOUS CINEMATIC OPENING (Card -> Doors -> 4K Walkthrough -> Welcome Moment) */}
       <section id="hero">
@@ -54,37 +61,46 @@ export const App: React.FC = () => {
         />
       </section>
 
-      {/* 2. WEDDING INVITATION STORY CONTENT */}
-      <main className="relative z-20">
-        {/* 2nd Page: Sanskrit Shloka */}
-        <section id="shloka">
-          <SanskritShlokaOne />
-        </section>
+      {/* 2. WEDDING INVITATION STORY CONTENT (Unlocked after opening invitation) */}
+      <AnimatePresence>
+        {isStoryUnlocked && (
+          <motion.main
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            className="relative z-20"
+          >
+            {/* 2nd Page: Sanskrit Shloka */}
+            <section id="shloka">
+              <SanskritShlokaOne />
+            </section>
 
-        {/* 3rd Page: Praharaj Family Welcome */}
-        <PraharajWelcome />
+            {/* 3rd Page: Praharaj Family Welcome */}
+            <PraharajWelcome />
 
-        {/* 4th Page: Scratch Card (Marriage Date Reveal) */}
-        <MarriageDateReveal />
+            {/* 4th Page: Scratch Card (Marriage Date Reveal) */}
+            <MarriageDateReveal />
 
-        {/* 5th Page: The Beloved Couple (Groom Udit Narayan Praharaj & Bride Subhadarshini Panda) */}
-        <CoupleReveal />
+            {/* 5th Page: The Beloved Couple (Groom Udit Narayan Praharaj & Bride Subhadarshini Panda) */}
+            <CoupleReveal />
 
-        {/* 6th Page: Live Countdown */}
-        <CountdownSection />
+            {/* 6th Page: Live Countdown */}
+            <CountdownSection />
 
-        {/* 7th Page: Marriage & Reception Event Date Tiles */}
-        <DateCardsSection />
+            {/* 7th Page: Marriage & Reception Event Date Tiles */}
+            <DateCardsSection />
 
-        {/* 8th Page: Send Your Blessings */}
-        <BlessingsSection />
+            {/* 8th Page: Send Your Blessings */}
+            <BlessingsSection />
 
-        {/* 9th Page: Thank You */}
-        <ThankYouSection />
+            {/* 9th Page: Thank You */}
+            <ThankYouSection />
 
-        {/* Footer */}
-        <FooterSection />
-      </main>
+            {/* Footer */}
+            <FooterSection />
+          </motion.main>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
