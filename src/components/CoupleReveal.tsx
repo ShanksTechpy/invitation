@@ -99,7 +99,17 @@ export const CoupleReveal: React.FC = () => {
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#D4AF37] via-transparent to-transparent blur-2xl pointer-events-none" />
 
           <div className="relative z-10 space-y-3">
-            <div className="text-[#D4AF37] text-xl">❖</div>
+            <div className="flex justify-center pb-1">
+              <div className="relative p-0.5 rounded-full border border-[#D4AF37]/80 shadow-[0_0_15px_rgba(212,175,55,0.6)] bg-[#120205] overflow-hidden">
+                <div className="w-10 h-10 rounded-full overflow-hidden relative">
+                  <img
+                    src="/images/gajanana.jpg"
+                    alt="Lord Ganesha Gajanana"
+                    className="w-full h-full object-cover filter brightness-110 contrast-115 animate-pulse"
+                  />
+                </div>
+              </div>
+            </div>
             <motion.h3
               animate={{
                 textShadow: [

@@ -1,18 +1,9 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { Heart, Send, Sparkles } from 'lucide-react';
-
-interface BlessingCard {
-  id: string;
-  name: string;
-  message: string;
-}
-
-const initialBlessings: BlessingCard[] = [];
+import { Send, Sparkles } from 'lucide-react';
 
 export const BlessingsSection: React.FC = () => {
-  const [blessings, setBlessings] = useState<BlessingCard[]>(initialBlessings);
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -21,13 +12,6 @@ export const BlessingsSection: React.FC = () => {
     e.preventDefault();
     if (!name.trim() || !message.trim()) return;
 
-    const newBlessing: BlessingCard = {
-      id: Date.now().toString(),
-      name: name.trim(),
-      message: message.trim(),
-    };
-
-    setBlessings([newBlessing, ...blessings]);
     setSubmitted(true);
 
     // Send blessing directly to WhatsApp (+91 7540959703) in an elegant, professional format
@@ -58,39 +42,6 @@ export const BlessingsSection: React.FC = () => {
           </h2>
           <div className="w-28 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto" />
         </div>
-
-        {/* Blessing Cards Grid */}
-        {blessings.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 preserve-3d">
-            <AnimatePresence>
-              {blessings.map((item, idx) => (
-                <motion.div
-                  key={item.id}
-                  initial={{ opacity: 0, y: 25 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  whileHover={{ y: -6, rotateX: -3, rotateY: 3, scale: 1.02 }}
-                  transition={{ duration: 0.5, delay: idx * 0.08 }}
-                  className="p-8 rounded-3xl palace-card border border-[#D4AF37]/40 flex flex-col justify-between space-y-6 relative group hover:border-[#D4AF37]/80 transition-all duration-300 shadow-[0_15px_35px_rgba(0,0,0,0.6)] preserve-3d cursor-pointer"
-                >
-                  <div className="space-y-4 translate-z-20">
-                    <div className="flex items-center justify-between border-b border-[#D4AF37]/20 pb-3">
-                      <h3 className="font-serif-cormorant text-2xl font-semibold text-[#FCEAA6]">
-                        {item.name}
-                      </h3>
-                      <Heart className="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]/20 group-hover:fill-[#D4AF37] group-hover:scale-125 transition-all" />
-                    </div>
-
-                    <p className="font-serif-cormorant text-lg text-[#FDFBF7] italic leading-relaxed font-light">
-                      “{item.message}”
-                    </p>
-                  </div>
-
-                  <div className="w-16 h-[1px] bg-[#D4AF37]/40 mx-auto translate-z-10" />
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </div>
-        )}
 
         {/* Interactive Blessing Form */}
         <motion.div
