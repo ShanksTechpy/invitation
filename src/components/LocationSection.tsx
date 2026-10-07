@@ -50,13 +50,24 @@ export const LocationSection: React.FC = () => {
 
               <div className="space-y-4 font-serif-cormorant text-lg text-[#FDFBF7]">
                 <p className="leading-relaxed font-light text-[#E8DFD1]">
-                  Join us at our ancestral village venue for the traditional Odia wedding ceremonies and grand reception.
+                  We look forward to welcoming you to celebrate our Marriage Ceremony and Grand Reception.
                 </p>
+
                 <div className="p-4 rounded-2xl bg-[#1F0408]/80 border border-[#D4AF37]/20 flex items-start gap-3">
                   <Compass className="w-5 h-5 text-[#D4AF37] shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-[#FCEAA6]">{address}</p>
-                    <p className="text-xs text-[#E8DFD1]/60 mt-1 font-sans-inter">District Cuttack, Odisha, India</p>
+                    <p className="text-xs uppercase tracking-wider text-[#D4AF37] font-sans-inter font-bold">Marriage Venue</p>
+                    <p className="font-semibold text-[#FCEAA6]">Kalyani Mandap</p>
+                    <p className="text-xs text-[#E8DFD1]/70 font-sans-inter mt-0.5">Tilda, Salipur, Katak – 754201</p>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-[#1F0408]/80 border border-[#D4AF37]/20 flex items-start gap-3">
+                  <Compass className="w-5 h-5 text-[#D4AF37] shrink-0 mt-1" />
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-[#D4AF37] font-sans-inter font-bold">Reception Venue</p>
+                    <p className="font-semibold text-[#FCEAA6]">Praharaj Grand Venue</p>
+                    <p className="text-xs text-[#E8DFD1]/70 font-sans-inter mt-0.5">Tarito, Kishorenagar, Katak – 754131</p>
                   </div>
                 </div>
               </div>

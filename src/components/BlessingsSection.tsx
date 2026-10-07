@@ -10,20 +10,7 @@ interface BlessingCard {
   message: string;
 }
 
-const initialBlessings: BlessingCard[] = [
-  {
-    id: '1',
-    name: 'Ankit',
-    relation: "Groom's Brother",
-    message: 'May your journey together always be filled with endless love, happiness, laughter, and divine blessings. So thrilled to welcome Subhadarshini into our family!',
-  },
-  {
-    id: '3',
-    name: 'Sashank',
-    relation: 'Well Wisher',
-    message: 'Heartiest congratulations to Udit & Subhadarshini as you step into this sacred and beautiful new chapter of life together!',
-  },
-];
+const initialBlessings: BlessingCard[] = [];
 
 export const BlessingsSection: React.FC = () => {
   const [blessings, setBlessings] = useState<BlessingCard[]>(initialBlessings);
@@ -36,18 +23,25 @@ export const BlessingsSection: React.FC = () => {
     e.preventDefault();
     if (!name.trim() || !message.trim()) return;
 
+    const relText = relation.trim() || 'Friend & Well Wisher';
     const newBlessing: BlessingCard = {
       id: Date.now().toString(),
       name: name.trim(),
-      relation: relation.trim() || 'Friend & Well Wisher',
+      relation: relText,
       message: message.trim(),
     };
 
     setBlessings([newBlessing, ...blessings]);
+    setSubmitted(true);
+
+    // Send blessing directly to WhatsApp (+91 7540959703)
+    const whatsappText = `*Wedding Blessing for Udit & Subhadarshini*\n\n*Name:* ${name.trim()}\n*Relation:* ${relText}\n*Message:* ${message.trim()}`;
+    const whatsappUrl = `https://wa.me/917540959703?text=${encodeURIComponent(whatsappText)}`;
+    window.open(whatsappUrl, '_blank');
+
     setName('');
     setRelation('');
     setMessage('');
-    setSubmitted(true);
 
     // Trigger celebratory confetti burst
     confetti({

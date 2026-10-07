@@ -52,16 +52,16 @@ export const DateCardsSection: React.FC = () => {
                 <div className="flex items-start gap-4 p-3 rounded-xl badge-3d">
                   <Clock className="w-5 h-5 text-[#D4AF37] shrink-0 mt-1" />
                   <div>
-                    <p className="font-medium text-lg text-[#FDFBF7]">7:00 PM Onwards</p>
-                    <p className="text-sm text-[#E8DFD1]/70">Dinner & Sacred Rituals</p>
+                    <p className="font-medium text-lg text-[#FDFBF7]">12:00 PM Onwards</p>
+                    <p className="text-sm text-[#E8DFD1]/70">Lunch & Sacred Rituals</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4 p-3 rounded-xl badge-3d">
                   <MapPin className="w-5 h-5 text-[#D4AF37] shrink-0 mt-1" />
                   <div>
-                    <p className="font-medium text-lg text-[#FDFBF7]">Praharaj Residence</p>
-                    <p className="text-sm text-[#E8DFD1]/70">Tarito, Salipur, Cuttack, Odisha – 754131</p>
+                    <p className="font-medium text-lg text-[#FDFBF7]">Kalyani Mandap</p>
+                    <p className="text-sm text-[#E8DFD1]/70">Tilda, Salipur, Katak – 754201</p>
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export const DateCardsSection: React.FC = () => {
                   <MapPin className="w-5 h-5 text-[#D4AF37] shrink-0 mt-1" />
                   <div>
                     <p className="font-medium text-lg text-[#FDFBF7]">Praharaj Grand Venue</p>
-                    <p className="text-sm text-[#E8DFD1]/70">Tarito, Salipur, Cuttack, Odisha – 754131</p>
+                    <p className="text-sm text-[#E8DFD1]/70">Tarito, Kishorenagar, Katak – 754131</p>
                   </div>
                 </div>
               </div>
