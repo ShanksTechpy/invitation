@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { MapPin, Navigation as NavIcon, Compass } from 'lucide-react';
 
 export const LocationSection: React.FC = () => {
-  const address = "Tarito, Salipur, Cuttack, Odisha – 754131";
+  const address = "C3VC+C4J, Tarito, Odisha 754131";
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    "Tarito, Salipur, Cuttack, Odisha 754131"
+    "C3VC+C4J, Tarito, Odisha 754131"
   )}`;
   const embedUrl = `https://www.google.com/maps?q=${encodeURIComponent(
-    "Tarito, Salipur, Cuttack, Odisha 754131"
+    "C3VC+C4J, Tarito, Odisha 754131"
   )}&output=embed`;
 
   return (
