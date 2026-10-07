@@ -15,7 +15,7 @@ export const BlessingsSection: React.FC = () => {
     setSubmitted(true);
 
     // Send blessing directly to WhatsApp (+91 7540959703) in an elegant, professional format
-    const whatsappText = `🌸 *Wedding Blessings for Udit & Subhadarshini* 🌸\n\n"${message.trim()}"\n\nWith Best Wishes & Warm Regards,\n— *${name.trim()}*`;
+    const whatsappText = `*Wedding Blessings for Udit & Subhadarshini*\n\n"${message.trim()}"\n\nWith Best Wishes & Warm Regards,\n— *${name.trim()}*`;
     const whatsappUrl = `https://wa.me/917540959703?text=${encodeURIComponent(whatsappText)}`;
     window.open(whatsappUrl, '_blank');
 
@@ -63,7 +63,7 @@ export const BlessingsSection: React.FC = () => {
 
           {submitted && (
             <div className="mb-6 p-4 rounded-xl bg-[#D4AF37]/20 border border-[#D4AF37] text-center text-[#FCEAA6] font-serif-cormorant text-lg">
-              ✨ Thank you! Your blessings have been sent to Udit & Subhadarshini.
+              Thank you! Your blessings have been sent to Udit & Subhadarshini.
             </div>
           )}
 

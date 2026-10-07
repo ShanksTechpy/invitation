@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, MapPin, Heart, Phone } from 'lucide-react';
+import { Calendar, Clock, MapPin, Heart, Phone, Sparkles } from 'lucide-react';
 
 export const DateCardsSection: React.FC = () => {
   return (
@@ -75,7 +75,7 @@ export const DateCardsSection: React.FC = () => {
           >
             <div className="space-y-6 translate-z-20">
               <div className="flex items-center justify-end border-b border-[#D4AF37]/20 pb-4">
-                <span className="text-2xl group-hover:scale-125 transition-transform duration-300">✨</span>
+                <Sparkles className="w-5 h-5 text-[#E6C657] fill-[#D4AF37] animate-pulse drop-shadow-[0_0_12px_rgba(212,175,55,0.8)] group-hover:scale-125 transition-transform duration-300" />
               </div>
 
               <h3 className="font-wedding text-4xl sm:text-5xl text-[#FCEAA6]">

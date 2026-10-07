@@ -354,7 +354,7 @@ export const MarriageDateReveal: React.FC = () => {
               onClick={handleRevealDirectly}
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#F3DB83] via-[#D4AF37] to-[#AA8822] text-[#1F0408] font-sans-inter text-xs uppercase tracking-[0.2em] font-bold shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_35px_rgba(212,175,55,0.7)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
             >
-              Reveal Wedding Date ✨
+              Reveal Wedding Date
             </button>
           </motion.div>
         ) : (
