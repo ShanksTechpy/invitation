@@ -20,11 +20,11 @@ export const DateCardsSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 preserve-3d">
           {/* Tile 1: Marriage Ceremony */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            whileHover={{ y: -8, rotateX: -3, rotateY: 3, scale: 1.02 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            initial={{ opacity: 0, y: 45, rotateX: 6 }}
+            whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+            whileHover={{ y: -10, rotateX: -4, rotateY: 4, scale: 1.025 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] }}
             className="p-8 sm:p-10 rounded-3xl palace-card border border-[#D4AF37]/40 relative overflow-hidden flex flex-col justify-between space-y-8 group hover:border-[#D4AF37] transition-all duration-500 shadow-[0_20px_45px_rgba(0,0,0,0.7)] preserve-3d cursor-pointer"
           >
             <div className="space-y-6 translate-z-20">
@@ -66,11 +66,11 @@ export const DateCardsSection: React.FC = () => {
 
           {/* Tile 2: Reception */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            whileHover={{ y: -8, rotateX: -3, rotateY: -3, scale: 1.02 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
+            initial={{ opacity: 0, y: 45, rotateX: 6 }}
+            whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+            whileHover={{ y: -10, rotateX: -4, rotateY: -4, scale: 1.025 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.15, ease: [0.23, 1, 0.32, 1] }}
             className="p-8 sm:p-10 rounded-3xl palace-card border border-[#D4AF37]/40 relative overflow-hidden flex flex-col justify-between space-y-8 group hover:border-[#D4AF37] transition-all duration-500 shadow-[0_20px_45px_rgba(0,0,0,0.7)] preserve-3d cursor-pointer"
           >
             <div className="space-y-6 translate-z-20">
