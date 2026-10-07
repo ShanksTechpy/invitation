@@ -20,8 +20,11 @@ export const FooterSection: React.FC = () => {
           Forever begins here.
         </p>
 
-        <div className="pt-4 text-xs font-sans-inter text-[#E8DFD1]/40 tracking-wider">
-          © 2027 Praharaj Family Wedding Celebration • Tarito, Salipur, Cuttack, Odisha
+        <div className="pt-4 space-y-1 text-xs font-sans-inter text-[#E8DFD1]/60 tracking-wider">
+          <p>© 2027 Praharaj Family Wedding Celebration</p>
+          <p className="text-[#D4AF37] font-medium">
+            Designed and built with care by : <span className="font-semibold text-[#FCEAA6]">Sashank Sekhar Dwibedi</span>
+          </p>
         </div>
       </div>
     </footer>
