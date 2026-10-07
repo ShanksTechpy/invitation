@@ -30,9 +30,14 @@ export const PraharajWelcome: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 1.2, delay: 0.3, ease: 'easeOut' }}
-          className="font-serif-cormorant text-2xl sm:text-3xl md:text-4xl text-[#FDFBF7] font-light leading-relaxed max-w-3xl mx-auto italic"
+          className="font-serif-cormorant text-2xl sm:text-3xl md:text-4xl text-[#FDFBF7] font-light leading-relaxed max-w-4xl mx-auto italic flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1.5"
         >
-          “Together with our family, we warmly welcome you to celebrate the sacred union and wedding of Udit Narayan Praharaj & Subhadarshini Panda.”
+          <span>“With hearts filled with joy and blessings, the Praharaj Family warmly welcomes you to celebrate the wedding of</span>
+          <span className="font-medium text-[#FCEAA6] not-italic">Udit Narayan Praharaj</span>
+          <span className="inline-flex items-center mx-1">
+            <Heart className="w-6 h-6 sm:w-7 sm:h-7 text-[#FF3B5C] fill-[#FF3B5C] animate-pulse drop-shadow-[0_0_15px_rgba(255,59,92,0.9)]" />
+          </span>
+          <span className="font-medium text-[#FCEAA6] not-italic">Subhadarshini Panda.”</span>
         </motion.p>
 
         <motion.div
@@ -42,17 +47,10 @@ export const PraharajWelcome: React.FC = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="pt-4 flex flex-col items-center gap-6"
         >
-          <a
-            href="#date-reveal"
-            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-[#D4AF37]/60 bg-[#34080E]/80 text-[#FCEAA6] font-sans-inter text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#D4AF37] hover:text-[#1F0408] transition-all duration-300 shadow-lg"
-          >
-            <Calendar className="w-4 h-4 text-[#D4AF37]" /> View Marriage Date Reveal Card
-          </a>
-
           <div className="flex items-center justify-center gap-3 text-[#D4AF37]/80">
-            <span className="h-[1px] w-12 bg-[#D4AF37]/40" />
+            <span className="h-[1px] w-16 bg-[#D4AF37]/40" />
             <Heart className="w-5 h-5 text-[#E6C657] fill-[#D4AF37] animate-pulse drop-shadow-[0_0_12px_rgba(212,175,55,0.8)]" />
-            <span className="h-[1px] w-12 bg-[#D4AF37]/40" />
+            <span className="h-[1px] w-16 bg-[#D4AF37]/40" />
           </div>
         </motion.div>
       </div>
