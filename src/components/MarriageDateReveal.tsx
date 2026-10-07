@@ -319,7 +319,7 @@ export const MarriageDateReveal: React.FC = () => {
                 MARRIAGE CEREMONY
               </p>
               <p className="font-sans-inter text-[9px] sm:text-[10px] font-medium text-[#FCEAA6]/80 tracking-wide">
-                Lagna: 7:00 PM Onwards • Salipur, Cuttack
+                Salipur, Cuttack
               </p>
             </div>
 

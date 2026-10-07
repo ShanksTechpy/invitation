@@ -6,7 +6,6 @@ import { CoupleReveal } from './components/CoupleReveal';
 import { SanskritShlokaOne } from './components/SanskritShlokaOne';
 import { CountdownSection } from './components/CountdownSection';
 import { DateCardsSection } from './components/DateCardsSection';
-import { SanskritShlokaTwo } from './components/SanskritShlokaTwo';
 import { BlessingsSection } from './components/BlessingsSection';
 import { LocationSection } from './components/LocationSection';
 import { ThankYouSection } from './components/ThankYouSection';
@@ -65,10 +64,7 @@ export const App: React.FC = () => {
         {/* Step G: Marriage & Reception Event Date Tiles */}
         <DateCardsSection />
 
-        {/* Step H: Second Sanskrit Shloka */}
-        <SanskritShlokaTwo />
-
-        {/* Step I: Send Your Blessings */}
+        {/* Step H: Send Your Blessings */}
         <BlessingsSection />
 
         {/* Step J: Location & Map */}

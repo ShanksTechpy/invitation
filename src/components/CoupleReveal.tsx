@@ -48,7 +48,7 @@ export const CoupleReveal: React.FC = () => {
                 Udit Narayan Praharaj
               </h3>
               <p className="font-serif-cormorant text-base sm:text-lg text-[#E8DFD1]/90 italic leading-relaxed">
-                Son of Prabin Ketan Praharaj<br />& Sashmita Praharaj
+                Son of Mr. Prabin Ketan Praharaj<br />& Mrs. Sashmita Praharaj
               </p>
             </div>
           </motion.div>
@@ -81,7 +81,7 @@ export const CoupleReveal: React.FC = () => {
                 Subhadarshini Panda
               </h3>
               <p className="font-serif-cormorant text-base sm:text-lg text-[#E8DFD1]/90 italic leading-relaxed">
-                Daughter of Ajit Kumar Panda<br />& Bhanumati Panda
+                Daughter of Mr. Ajit Kumar Panda<br />& Mrs. Bhanumati Panda
               </p>
             </div>
           </motion.div>
