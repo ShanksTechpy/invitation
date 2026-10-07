@@ -315,22 +315,22 @@ export const HeroOpening: React.FC<HeroOpeningProps> = ({
         )}
       </AnimatePresence>
 
-      {/* 5. ROYAL GOLDEN DOWN ARROW INDICATOR OVER VIDEO */}
+      {/* 5. ROYAL GOLDEN SCROLL INDICATOR (Renders strictly AFTER opening invitation) */}
       {isVideoVisible && (
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.8 }}
-          className="absolute bottom-[max(1.25rem,env(safe-area-inset-bottom))] inset-x-0 w-full flex flex-col items-center justify-center z-40 pointer-events-auto text-center"
+          transition={{ duration: 1, delay: 1.5 }}
+          className="absolute bottom-[max(1.5rem,env(safe-area-inset-bottom))] inset-x-0 w-full flex flex-col items-center justify-center z-40 pointer-events-auto text-center"
         >
           <a
             href="#shloka"
-            className="inline-flex flex-col items-center gap-1 group cursor-pointer"
+            className="inline-flex flex-col items-center gap-1.5 px-5 py-2 rounded-full border border-[#D4AF37]/60 bg-[#120205]/85 backdrop-blur-md shadow-[0_0_25px_rgba(212,175,55,0.4)] group hover:scale-105 active:scale-95 transition-all cursor-pointer"
           >
-            <span className="font-serif-cormorant text-xs tracking-[0.3em] uppercase font-semibold text-[#FCEAA6] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">
-              Scroll Down
+            <span className="font-serif-cormorant text-xs tracking-[0.25em] uppercase font-bold text-[#FCEAA6] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+              Scroll Down to Explore
             </span>
-            <ArrowDown className="w-5 h-6 text-[#FCEAA6] stroke-[2.2] drop-shadow-[0_0_15px_rgba(212,175,55,0.95)] animate-bounce mt-0.5" />
+            <ArrowDown className="w-4 h-4 text-[#D4AF37] drop-shadow-[0_0_10px_rgba(212,175,55,0.9)] animate-bounce" />
           </a>
         </motion.div>
       )}
