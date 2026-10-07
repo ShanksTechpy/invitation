@@ -86,47 +86,6 @@ export const CoupleReveal: React.FC = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Sacred Mangalya Sutra Mantra in Golden Glowing 3D Letters */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92, y: 20 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, ease: 'easeOut' }}
-          className="max-w-4xl mx-auto p-6 sm:p-10 rounded-3xl palace-card border-2 border-[#D4AF37]/60 bg-gradient-to-b from-[#3A0A10]/95 via-[#230408]/95 to-[#150205]/95 shadow-[0_0_50px_rgba(212,175,55,0.4)] text-center relative overflow-hidden preserve-3d mt-12"
-        >
-          {/* Subtle Ambient Radial Glow */}
-          <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#D4AF37] via-transparent to-transparent blur-2xl pointer-events-none" />
-
-          <div className="relative z-10 space-y-3">
-            <div className="flex justify-center pb-1">
-              <div className="relative p-0.5 rounded-full border border-[#D4AF37]/80 shadow-[0_0_15px_rgba(212,175,55,0.6)] bg-[#120205] overflow-hidden">
-                <div className="w-10 h-10 rounded-full overflow-hidden relative">
-                  <img
-                    src="/images/gajanana.jpg"
-                    alt="Lord Ganesha Gajanana"
-                    className="w-full h-full object-cover filter brightness-110 contrast-115 animate-pulse"
-                  />
-                </div>
-              </div>
-            </div>
-            <motion.h3
-              animate={{
-                textShadow: [
-                  '0 0 15px rgba(212,175,55,0.6), 0 0 30px rgba(212,175,55,0.4)',
-                  '0 0 25px rgba(252,234,166,0.95), 0 0 50px rgba(212,175,55,0.7)',
-                  '0 0 15px rgba(212,175,55,0.6), 0 0 30px rgba(212,175,55,0.4)',
-                ],
-              }}
-              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-              className="font-serif-cormorant text-xl sm:text-2xl md:text-3xl font-semibold text-[#FCEAA6] leading-relaxed tracking-wider drop-shadow-[0_4px_15px_rgba(0,0,0,0.95)] translate-z-20"
-            >
-              ॥ ॐ मांगल्यं तन्तुनानेन मम जीवनहेतुना ।<br />
-              कण्ठे बध्नामि शुभगे सा जीव शरदः शतम् ॥
-            </motion.h3>
-            <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto pt-1" />
-          </div>
-        </motion.div>
       </div>
     </section>
   );
