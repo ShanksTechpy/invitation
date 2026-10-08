@@ -9,7 +9,7 @@ interface TimeLeft {
 }
 
 export const CountdownSection: React.FC = () => {
-  const targetDate = new Date('2027-02-10T19:00:00+05:30').getTime();
+  const targetDate = new Date('2027-02-10T12:00:00+05:30').getTime();
 
   const calculateTimeLeft = (): TimeLeft => {
     const now = new Date().getTime();
