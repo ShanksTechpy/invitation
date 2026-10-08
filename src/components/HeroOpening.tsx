@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, ArrowDown } from 'lucide-react';
+import { Play, ArrowUp } from 'lucide-react';
 
 export type OpeningState =
   | 'IDLE'
@@ -327,10 +327,10 @@ export const HeroOpening: React.FC<HeroOpeningProps> = ({
             href="#shloka"
             className="inline-flex flex-col items-center gap-1 cursor-pointer group"
           >
+            <ArrowUp className="w-5 h-5 text-[#FCEAA6] drop-shadow-[0_0_15px_rgba(212,175,55,0.95)] animate-bounce mb-0.5" />
             <span className="font-serif-cormorant text-xs tracking-[0.3em] uppercase font-semibold text-[#FCEAA6] drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">
-              SCROLL DOWN
+              SCROLL
             </span>
-            <ArrowDown className="w-5 h-5 text-[#FCEAA6] drop-shadow-[0_0_15px_rgba(212,175,55,0.95)] animate-bounce mt-0.5" />
           </a>
         </motion.div>
       )}
